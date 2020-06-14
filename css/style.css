@@ -152,11 +152,14 @@
     
     .banner_content {
         position: absolute;
-        width: 49%;
+        width: 45%;
         top: 225px;
         left: 69px;
     }
-    
+    span.btn_tags {
+    float: left;
+    width: 100%;
+}
     .delivery_img_section {
         float: left;
         width: 100%;
