@@ -23,7 +23,7 @@
         </div>
         <span class="menu_icons" onclick="menuToggle()"><img src="assets/images/menu.png"></span>
         <div class="nav_link" id="nav_bar">
-            <ul class="price_page">
+            <ul class="price_page" data-category="nippon economy">
                 <li><a href="/">Home</a></li>
                 <li><a href="price.html">Pricing</a></li>
                 <li><a href="service.html">Service</a></li>
@@ -44,19 +44,19 @@
                             <div class="cost_list_one">
                                 <h6>brand</h6>
                                 <ul>
-                                    <li><span><input type="checkbox" class="cost_check"></span><a>asian paint</a></li>
-                                    <li><span><input type="checkbox" class="cost_check"></span><a>nerolac</a></li>
-                                    <li><span><input type="checkbox" class="cost_check"></span><a>berger</a></li>
-                                    <li><span><input type="checkbox" class="cost_check"></span><a>nippon</a></li>
-                                    <li><span><input type="checkbox" class="cost_check"></span><a>dulux</a></li>
+                                    <li><span><input type="checkbox" name="fl-comp" value="asian" class="cost_check price-filter" checked></span><a>asian paint</a></li>
+                                    <li><span><input type="checkbox" name="fl-comp" value="nerolac" class="cost_check price-filter" checked></span><a>nerolac</a></li>
+                                    <li><span><input type="checkbox" name="fl-comp" value="berger" class="cost_check price-filter" checked></span><a>berger</a></li>
+                                    <li><span><input type="checkbox" name="fl-comp" value="nippon" class="cost_check price-filter" checked></span><a>nippon</a></li>
+                                    <li><span><input type="checkbox" name="fl-comp" value="dulux" class="cost_check price-filter" checked></span><a>dulux</a></li>
                                 </ul>
                             </div>
                             <div class="cost_list_one">
                                 <h6>categories</h6>
                                 <ul>
-                                    <li><span><input type="checkbox" class="cost_check"></span><a>economy</a></li>
-                                    <li><span><input type="checkbox" class="cost_check"></span><a>standerd</a></li>
-                                    <li><span><input type="checkbox" class="cost_check"></span><a>advance</a></li>
+                                    <li><span><input type="checkbox" name="fl-cost" value="economy" class="price_check price-filter" checked></span><a>economy</a></li>
+                                    <li><span><input type="checkbox" name="fl-cost" value="standard" class="price_check price-filter" checked></span><a>standard</a></li>
+                                    <li><span><input type="checkbox" name="fl-cost" value="advance" class="price_check price-filter" checked></span><a>advance</a></li>
                                 </ul>
                             </div>
 
@@ -68,7 +68,7 @@
                             <div class="price_head nxt">
                                 <h2 class="head_two bolder">Interior</h2>
                             </div>
-                            <div class="col-md-3 col-xs-6 price_page ">
+                            <div class="col-md-3 col-xs-6 price_page paint-items" data-category="asian economy">
                                 <a href="quote.html" class="full_width">
                                 <div class="pricing_content ">
                                     <h4><i class="fa fa-rupee "></i> 9</h4>
@@ -79,7 +79,7 @@
                                 </div>
                             </a>
                             </div>
-                            <div class="col-md-3 col-xs-6 price_page ">
+                            <div class="col-md-3 col-xs-6 price_page paint-items" data-category="asian economy">
                                 <a href="quote.html" class="full_width">
                                 <div class="pricing_content ">
                                     <h4><i class="fa fa-rupee "></i> 9.5</h4>
@@ -90,7 +90,7 @@
                                 </div>
                                 </a>
                             </div>
-                            <div class="col-md-3 col-xs-6 price_page ">
+                            <div class="col-md-3 col-xs-6 price_page paint-items"  data-category="asian standard">
                                 <a href="quote.html" class="full_width">
                                 <div class="pricing_content ">
                                     <h4><i class="fa fa-rupee "></i> 12</h4>
@@ -101,7 +101,7 @@
                                 </div>
                                 </a>
                             </div>
-                            <div class="col-md-3 col-xs-6 price_page ">
+                            <div class="col-md-3 col-xs-6 price_page paint-items" data-category="asian standard">
                                 <a href="quote.html" class="full_width">
                                 <div class="pricing_content ">
                                     <h4><i class="fa fa-rupee "></i> 14</h4>
@@ -112,7 +112,7 @@
                                 </div>
                                 </a>
                             </div>
-                            <div class="col-md-3 col-xs-6 price_page ">
+                            <div class="col-md-3 col-xs-6 price_page paint-items " data-category="asian advance">
                                 <a href="quote.html" class="full_width">
                                 <div class="pricing_content ">
                                     <h4><i class="fa fa-rupee "></i> 16</h4>
@@ -123,7 +123,7 @@
                                 </div>
                                 </a>
                             </div>
-                            <div class="col-md-3 col-xs-6 price_page ">
+                            <div class="col-md-3 col-xs-6 price_page paint-items "  data-category="asian advance">
                                 <a href="quote.html" class="full_width">
                                 <div class="pricing_content ">
                                     <h4><i class="fa fa-rupee "></i> 18</h4>
@@ -134,7 +134,7 @@
                                 </div>
                                 </a>
                             </div>
-                            <div class="col-md-3 col-xs-6 price_page ">
+                            <div class="col-md-3 col-xs-6 price_page paint-items "  data-category="asian advance">
                                 <a href="quote.html" class="full_width">
                                 <div class="pricing_content ">
                                     <h4><i class="fa fa-rupee "></i> 18</h4>
@@ -145,7 +145,7 @@
                                 </div>
                                 </a>
                             </div>
-                            <div class="col-md-3 col-xs-6 price_page ">
+                            <div class="col-md-3 col-xs-6 price_page paint-items "  data-category="asian advance">
                                 <a href="quote.html" class="full_width">
                                 <div class="pricing_content ">
                                     <h4><i class="fa fa-rupee "></i> 20</h4>
@@ -156,7 +156,7 @@
                                 </div>
                                 </a>
                             </div>
-                            <div class="col-md-3 col-xs-6 price_page ">
+                            <div class="col-md-3 col-xs-6 price_page paint-items"  data-category="asian advance">
                                 <a href="quote.html" class="full_width">
                                 <div class="pricing_content ">
                                     <h4><i class="fa fa-rupee "></i> 23</h4>
@@ -167,7 +167,7 @@
                                 </div>
                                 </a>
                             </div>
-                            <div class="col-md-3 col-xs-6 price_page ">
+                            <div class="col-md-3 col-xs-6 price_page paint-items" data-category="asian advance">
                                 <a href="quote.html" class="full_width">
                                 <div class="pricing_content ">
                                     <h4><i class="fa fa-rupee "></i> 18</h4>
@@ -178,7 +178,7 @@
                                 </div>
                                 </a>
                             </div>
-                            <div class="col-md-3 col-xs-6 price_page ">
+                            <div class="col-md-3 col-xs-6 price_page paint-items" data-category="nerolac economy">
                                 <a href="quote.html" class="full_width">
                                 <div class="pricing_content ">
                                     <h4><i class="fa fa-rupee "></i> 9</h4>
@@ -189,7 +189,7 @@
                                 </div>
                                 </a>
                             </div>
-                            <div class="col-md-3 col-xs-6 price_page ">
+                            <div class="col-md-3 col-xs-6 price_page paint-items" data-category="nerolac standard">
                                 <a href="quote.html" class="full_width">
                                 <div class="pricing_content ">
                                     <h4><i class="fa fa-rupee "></i>12</h4>
@@ -201,7 +201,7 @@
                                 </a>
                             </div>
 
-                            <div class="col-md-3 col-xs-6 price_page ">
+                            <div class="col-md-3 col-xs-6 price_page paint-items" data-category="nerolac advance">
                                 <a href="quote.html" class="full_width">
                                 <div class="pricing_content ">
                                     <h4><i class="fa fa-rupee "></i> 14</h4>
@@ -212,7 +212,7 @@
                                 </div>
                                 </a>
                             </div>
-                            <div class="col-md-3 col-xs-6 price_page ">
+                            <div class="col-md-3 col-xs-6 price_page paint-items" data-category="nerolac advance">
                                 <a href="quote.html" class="full_width">
                                 <div class="pricing_content ">
                                     <h4><i class="fa fa-rupee "></i> 18</h4>
@@ -223,7 +223,7 @@
                                 </div>
                                 </a>
                             </div>
-                            <div class="col-md-3 col-xs-6 price_page ">
+                            <div class="col-md-3 col-xs-6 price_page paint-items" data-category="nerolac advance">
                                 <a href="quote.html" class="full_width">
                                 <div class="pricing_content ">
                                     <h4><i class="fa fa-rupee "></i> 22</h4>
@@ -234,7 +234,7 @@
                                 </div>
                                 </a>
                             </div>
-                            <div class="col-md-3 col-xs-6 price_page ">
+                            <div class="col-md-3 col-xs-6 price_page paint-items" data-category="berger economy">
                                 <a href="quote.html" class="full_width">
                                 <div class="pricing_content ">
                                     <h4><i class="fa fa-rupee "></i> 9</h4>
@@ -245,7 +245,7 @@
                                 </div>
                                 </a>
                             </div>
-                            <div class="col-md-3 col-xs-6 price_page ">
+                            <div class="col-md-3 col-xs-6 price_page paint-items" data-category="berger standard">
                                 <a href="quote.html" class="full_width">
                                 <div class="pricing_content ">
                                     <h4><i class="fa fa-rupee "></i> 12</h4>
@@ -259,7 +259,7 @@
 
 
 
-                            <div class="col-md-3 col-xs-6 price_page ">
+                            <div class="col-md-3 col-xs-6 price_page paint-items" data-category="berger standard">
                                 <a href="quote.html" class="full_width">
                                 <div class="pricing_content ">
                                     <h4><i class="fa fa-rupee "></i> 14</h4>
@@ -272,7 +272,7 @@
                             </div>
 
 
-                            <div class="col-md-3 col-xs-6 price_page ">
+                            <div class="col-md-3 col-xs-6 price_page paint-items" data-category="berger advance">
                                 <a href="quote.html" class="full_width">
                                 <div class="pricing_content ">
                                     <h4><i class="fa fa-rupee "></i> 16</h4>
@@ -284,7 +284,7 @@
                                 </a>
                             </div>
 
-                            <div class="col-md-3 col-xs-6 price_page ">
+                            <div class="col-md-3 col-xs-6 price_page paint-items" data-category="berger advance">
                                 <a href="quote.html" class="full_width">
                                 <div class="pricing_content ">
                                     <h4><i class="fa fa-rupee "></i> 20</h4>
@@ -295,7 +295,7 @@
                                 </div>
                                 </a>
                             </div>
-                            <div class="col-md-3 col-xs-6 price_page ">
+                            <div class="col-md-3 col-xs-6 price_page paint-items" data-category="nippon economy">
                                 <a href="quote.html" class="full_width">
                                 <div class="pricing_content ">
                                     <h4><i class="fa fa-rupee "></i> 9</h4>
@@ -306,7 +306,7 @@
                                 </div>
                                 </a>
                             </div>
-                            <div class="col-md-3 col-xs-6 price_page ">
+                            <div class="col-md-3 col-xs-6 price_page paint-items" data-category="nippon standard">
                                 <a href="quote.html" class="full_width">
                                 <div class="pricing_content ">
                                     <h4><i class="fa fa-rupee "></i> 10</h4>
@@ -317,7 +317,7 @@
                                 </div>
                                 </a>
                             </div>
-                            <div class="col-md-3 col-xs-6 price_page ">
+                            <div class="col-md-3 col-xs-6 price_page paint-items" data-category="nippon advance">
                                 <a href="quote.html" class="full_width">
                                 <div class="pricing_content ">
                                     <h4><i class="fa fa-rupee "></i>12</h4>
@@ -328,7 +328,7 @@
                                 </div>
                                 </a>
                             </div>
-                            <div class="col-md-3 col-xs-6 price_page ">
+                            <div class="col-md-3 col-xs-6 price_page paint-items" data-category="nippon advance">
                                 <a href="quote.html" class="full_width">
                                 <div class="pricing_content ">
                                     <h4><i class="fa fa-rupee "></i>16</h4>
@@ -339,7 +339,7 @@
                                 </div>
                                 </a>
                             </div>
-                            <div class="col-md-3 col-xs-6 price_page ">
+                            <div class="col-md-3 col-xs-6 price_page paint-items" data-category="nippon advance">
                                 <a href="quote.html" class="full_width">
                                 <div class="pricing_content ">
                                     <h4><i class="fa fa-rupee "></i>18</h4>
@@ -350,7 +350,7 @@
                                 </div>
                                 </a>
                             </div>
-                            <div class="col-md-3 col-xs-6 price_page ">
+                            <div class="col-md-3 col-xs-6 price_page paint-items" data-category="nippon standard">
                                 <a href="quote.html" class="full_width">
                                 <div class="pricing_content ">
                                     <h4><i class="fa fa-rupee "></i>20</h4>
@@ -361,7 +361,7 @@
                                 </div>
                                 </a>
                             </div>
-                            <div class="col-md-3 col-xs-6 price_page ">
+                            <div class="col-md-3 col-xs-6 price_page paint-items" data-category="dulux standard">
                                 <a href="quote.html" class="full_width">
                                 <div class="pricing_content ">
                                     <h4><i class="fa fa-rupee "></i>13</h4>
@@ -372,7 +372,7 @@
                                 </div>
                                 </a>
                             </div>
-                            <div class="col-md-3 col-xs-6 price_page ">
+                            <div class="col-md-3 col-xs-6 price_page paint-items" data-category="dulux standard">
                                 <a href="quote.html" class="full_width">
                                 <div class="pricing_content ">
                                     <h4><i class="fa fa-rupee "></i>14</h4>
@@ -383,7 +383,7 @@
                                 </div>
                                 </a>
                             </div>
-                            <div class="col-md-3 col-xs-6 price_page ">
+                            <div class="col-md-3 col-xs-6 price_page paint-items" data-category="dulux advance">
                                 <a href="quote.html" class="full_width">
                                 <div class="pricing_content ">
                                     <h4><i class="fa fa-rupee "></i>16</h4>
@@ -400,7 +400,7 @@
                                 <h2 class="head_two bolder">Exterior</h2>
                             </div>
                             <div class="exterior_list">
-                                <div class="col-md-3 col-xs-6 price_page ">
+                                <div class="col-md-3 col-xs-6 price_page paint-items" data-category="asian economy">
                                     <a href="quote.html" class="full_width">
                                     <div class="pricing_content ">
                                         <h4><i class="fa fa-rupee "></i>10</h4>
@@ -411,7 +411,7 @@
                                     </div>
                                     </a>
                                 </div>
-                                <div class="col-md-3 col-xs-6 price_page ">
+                                <div class="col-md-3 col-xs-6 price_page paint-items" data-category="asian standard">
                                     <a href="quote.html" class="full_width">
                                     <div class="pricing_content ">
                                         <h4><i class="fa fa-rupee "></i>13</h4>
@@ -422,7 +422,7 @@
                                     </div>
                                     </a>
                                 </div>
-                                <div class="col-md-3 col-xs-6 price_page ">
+                                <div class="col-md-3 col-xs-6 price_page paint-items" data-category="asian advance">
                                     <a href="quote.html" class="full_width">
                                     <div class="pricing_content ">
                                         <h4><i class="fa fa-rupee "></i>18</h4>
@@ -433,7 +433,7 @@
                                     </div>
                                     </a>
                                 </div>
-                                <div class="col-md-3 col-xs-6 price_page ">
+                                <div class="col-md-3 col-xs-6 price_page paint-items" data-category="asian advance">
                                     <a href="quote.html" class="full_width">
                                     <div class="pricing_content ">
 
@@ -446,7 +446,7 @@
                                     </a>
                                 </div>
 
-                                <div class="col-md-3 col-xs-6 price_page ">
+                                <div class="col-md-3 col-xs-6 price_page paint-items" data-category="nerolac economy">
                                     <a href="quote.html" class="full_width">
                                     <div class="pricing_content ">
 
@@ -458,7 +458,7 @@
                                     </div>
                                     </a>
                                 </div>
-                                <div class="col-md-3 col-xs-6 price_page ">
+                                <div class="col-md-3 col-xs-6 price_page paint-items" data-category="nerolac economy">
                                     <a href="quote.html" class="full_width">
                                     <div class="pricing_content ">
 
@@ -470,7 +470,7 @@
                                     </div>
                                     </a>
                                 </div>
-                                <div class="col-md-3 col-xs-6 price_page ">
+                                <div class="col-md-3 col-xs-6 price_page paint-items" data-category="nerolac standard">
                                     <a href="quote.html" class="full_width">
                                     <div class="pricing_content ">
 
@@ -483,7 +483,7 @@
                                     </a>
                                 </div>
 
-                                <div class="col-md-3 col-xs-6 price_page ">
+                                <div class="col-md-3 col-xs-6 price_page paint-items" data-category="nerolac standard">
                                     <a href="quote.html" class="full_width">
                                     <div class="pricing_content ">
 
@@ -495,7 +495,7 @@
                                     </div>
                                     </a>
                                 </div>
-                                <div class="col-md-3 col-xs-6 price_page ">
+                                <div class="col-md-3 col-xs-6 price_page paint-items" data-category="nerolac advance">
                                     <a href="quote.html" class="full_width">
                                     <div class="pricing_content ">
 
@@ -508,7 +508,7 @@
                                     </a>
                                 </div>
 
-                                <div class="col-md-3 col-xs-6 price_page ">
+                                <div class="col-md-3 col-xs-6 price_page paint-items" data-category="berger economy">
                                     <a href="quote.html" class="full_width">
                                     <div class="pricing_content ">
 
@@ -520,7 +520,7 @@
                                     </div>
                                     </a>
                                 </div>
-                                <div class="col-md-3 col-xs-6 price_page ">
+                                <div class="col-md-3 col-xs-6 price_page paint-items" data-category="berger standard">
                                     <a href="quote.html" class="full_width">
                                     <div class="pricing_content ">
 
@@ -532,7 +532,7 @@
                                     </div>
                                     </a>
                                 </div>
-                                <div class="col-md-3 col-xs-6 price_page ">
+                                <div class="col-md-3 col-xs-6 price_page paint-items" data-category="berger standard">
                                     <a href="quote.html" class="full_width">
                                     <div class="pricing_content ">
 
@@ -544,7 +544,7 @@
                                     </div>
                                     </a>
                                 </div>
-                                <div class="col-md-3 col-xs-6 price_page ">
+                                <div class="col-md-3 col-xs-6 price_page paint-items" data-category="berger advance">
                                     <a href="quote.html" class="full_width">
                                     <div class="pricing_content ">
 
@@ -557,7 +557,7 @@
                                     </a>
                                 </div>
 
-                                <div class="col-md-3 col-xs-6 price_page ">
+                                <div class="col-md-3 col-xs-6 price_page paint-items" data-category="nippon economy">
                                     <a href="quote.html" class="full_width">
                                     <div class="pricing_content ">
 
@@ -569,7 +569,7 @@
                                     </div>
                                     </a>
                                 </div>
-                                <div class="col-md-3 col-xs-6 price_page ">
+                                <div class="col-md-3 col-xs-6 price_page paint-items" data-category="nippon standard">
                                     <a href="quote.html" class="full_width">
                                     <div class="pricing_content ">
 
@@ -581,7 +581,7 @@
                                     </div>
                                     </a>
                                 </div>
-                                <div class="col-md-3 col-xs-6 price_page ">
+                                <div class="col-md-3 col-xs-6 price_page paint-items" data-category="nippon standard">
                                     <a href="quote.html" class="full_width">
                                     <div class="pricing_content ">
 
@@ -594,7 +594,7 @@
                                     </a>
                                 </div>
 
-                                <div class="col-md-3 col-xs-6 price_page ">
+                                <div class="col-md-3 col-xs-6 price_page paint-items" data-category="dulux economy">
                                     <a href="quote.html" class="full_width">
                                     <div class="pricing_content ">
 
@@ -606,7 +606,7 @@
                                     </div>
                                     </a>
                                 </div>
-                                <div class="col-md-3 col-xs-6 price_page ">
+                                <div class="col-md-3 col-xs-6 price_page paint-items" data-category="dulux standard">
                                     <a href="quote.html" class="full_width">
                                     <div class="pricing_content ">
 
@@ -619,7 +619,7 @@
                                     </a>
                                 </div>
 
-                                <div class="col-md-3 col-xs-6 price_page ">
+                                <div class="col-md-3 col-xs-6 price_page paint-items" data-category="dulux advance">
                                     <a href="quote.html" class="full_width">
                                     <div class="pricing_content ">
                                         <h4><i class="fa fa-rupee "></i>19</h4>
@@ -630,7 +630,7 @@
                                     </div>
                                     </a>
                                 </div>
-                                <div class="col-md-3 col-xs-6 price_page ">
+                                <div class="col-md-3 col-xs-6 price_page paint-items" data-category="dulux advance">
                                     <a href="quote.html" class="full_width">
                                     <div class="pricing_content ">
 
