@@ -299,7 +299,7 @@
     section.painting_section {
         float: left;
         width: 100%;
-        padding-top: 64px;
+        padding-top: 170px;
     }
     
     .painting_overall {
@@ -405,7 +405,7 @@
     section.home_pest_section {
         float: left;
         width: 100%;
-        padding-top: 50px;
+        padding-top: 80px;
     }
     
     .pest_overall {
@@ -441,11 +441,10 @@
         width: 100%;
         padding-bottom: 21px;
     }
-    
     section.work_gallery_section {
         float: left;
         width: 100%;
-        padding-top: 20px;
+        padding-top: 75px;
     }
     
     .work_gallery {
@@ -468,7 +467,6 @@
         text-align: center;
         float: left;
         width: 100%;
-        padding-bottom: 27px;
     }
     
     .work_gallery_two {
@@ -573,8 +571,12 @@
         line-height: 25px;
         font-family: 'Poppins-Regular';
         padding: 30px 0px;
+        width: auto;
     }
-    
+    a.full_width {
+        float: left;
+        width: 100%;
+    }
     .pricing_content ul {
         float: left;
         padding: 0px;
@@ -633,13 +635,15 @@
     
     .pricing_content:hover .get-start {
         position: absolute;
-        bottom: 31px;
+        bottom: 45px;
         width: 121px;
         height: 30px;
         background: #000;
         border-radius: 6px;
     }
-    
+    .nav_logo.price {
+        padding-left: 53px;
+    }
     .pricing_content:hover .get-start a {
         width: 100%;
         float: left;
@@ -1127,10 +1131,9 @@
         list-style-type: none;
         float: right;
     }
-    
     .nav_link ul li {
         float: left;
-        width: 150px;
+        width: 131px;
         text-align: center;
     }
     
@@ -1182,7 +1185,7 @@
     
     .nav_link ul li a {
         position: relative;
-        padding: 0px 10px;
+        padding: 0px 0px;
     }
     
     .nav_link ul li a:hover:before {
@@ -1439,7 +1442,9 @@ div#gallery{
         padding: 10px;
         margin-right: 10px;
     }
-    
+    footer.foot.inner_page_foot.service {
+        margin: 0;
+    }
     .cost_content .pricing_content {
         min-height: 252px;
         margin-bottom: 30px;
@@ -1619,10 +1624,9 @@ div#gallery{
         width: 15%;
         position: relative;
     }
-    
     .detail_content {
-        float: right;
-        width: 85%;
+        float: left;
+        width: 100%;
     }
     .detail_content label.iconic {
         margin: 0px;
@@ -1712,9 +1716,78 @@ div#gallery{
         float: left;
         width: 100%;
     }
+    section.contact {
+        float: left;
+        width: 100%;
+        margin-top: 93px;
+        background-image: url(/assets/images/contact.png);
+        height: 470px;
+    }
+    footer.foot.inner_page_foot.contact {
+        margin: 0px;
+        background-color: #ff7b00;
+    }
+    footer.foot.inner_page_foot.contact .foot_copyrights{
+        background-color: #ff7b00;
+    }
+    .contact_overall {
+        float: left;
+        width: 100%;
+    }
+    
+    .contact_one {
+        float: none;
+        margin: 0px auto;
+        width: 35%;
+        background: #fff;
+        border-radius: 10px;
+        padding: 30px;
+        min-height: 215px;
+    }
+    
+    .contact_one h5 {
+        color: #6c63ff;
+        text-transform: capitalize;
+        font-size: 16px;
+        font-family: 'Poppins-Regular';
+        margin: 0px;
+        padding-bottom: 21px;
+    }
+    
+    .contact_one li a {
+        color: #000;
+        float: left;
+        width: 100%;
+        font-family: 'Poppins-Regular';
+        line-height: 23px;
+        position: relative;
+    }
+    
+    .contact_one ul li {
+        float: left;
+        width: 100%;
+        padding-bottom: 18px;
+    }
+    .contact_one ul li a span i{
+        color: #6f6c6c;
+    }
+    .contact_one ul {
+        float: left;
+        width: 100%;
+        list-style-type: none;
+    }
+    .contact_one ul li a span {
+        position: absolute;
+        left: -23px;
+        top: 3px;
+        font-size: 16px;
+    }
     /*------responsive css---------*/
     
     @media only screen and (max-width: 767px) {
+        .nav_logo.price {
+            padding-left: 0;
+        }
         section.home_pest_section .home {
             width: 90%;
             margin: 0px auto;
@@ -1901,7 +1974,7 @@ div#gallery{
             display: none;
         }
         section.painting_section {
-            padding-top: 0;
+            padding-top: 30px;
         }
         p.paragraph {
             line-height: 23px !important;
@@ -1914,6 +1987,9 @@ div#gallery{
         }
         section.pricing_section {
             margin-top: 56px;
+        }
+        section.pricing_section.service {
+            margin-top: 0px;
         }
         .pricing_content h6 {
             padding: 0px;
@@ -2202,6 +2278,29 @@ display: none;
             float: left;
             width: 100%;
         }
+        section.contact {
+            float: left;
+            width: 100%;
+            margin-top: 30px;
+            height: auto;
+        }
+        .contact_one {
+            float: left;
+            width: 100%;
+            background: #fff;
+            padding: 18px;
+            box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+            margin-bottom: 30px;
+        }
+        footer.foot.inner_page_foot.contact,footer.foot.inner_page_foot.contact .foot_copyrights{
+            background-color: #6c63ff;
+        }
+        section.contact {
+            background-image: none;
+        }
+        section.work_gallery_section {
+            padding-top: 0;
+        }
     }
     
     @media only screen and (min-width: 568px) and (max-width: 767px) {
@@ -2228,5 +2327,131 @@ display: none;
             float: left;
             width: 50%;
         }
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1200px) {
+        .nav_logo.price {
+            padding-left: 0;
+        }
+        .nav_link ul li {
+            float: left;
+            width: 107px;
+            text-align: center;
+        }
+        .nav_link {
+            float: left;
+            width: 70%;
+            padding-top: 35px;
+            padding-right: 0;
+        }
+        .nav_link ul li a.button_tag {
+            padding: 6px 10px;
+            font-size: 13px;
+            border: 1px solid #2b2929;
+        }
+        .nav_link ul li a {
+            color: #2b2929;
+        }
+        section.banner_section {
+            min-height: 450px;
+        }
+        .banner_content {
+            position: static;
+            margin-top: 110px;
+        }
+        h1.head_one {
+            margin: 0px;
+            font-size: 37px;
+        }
+        .nav_logo {
+            float: left;
+            width: 25%;
+            padding-left: 0;
+            padding-top: 16px;
+        }
+        .banner_content span a {
+            margin-right: 0;
+            padding: 8px 16px;
+            width: 220px !important;
+            float: left;
+            text-align: center;
+            font-size: 13px;
+            padding-top: 10px;
+            margin-top: 13px;
+        }
+        .banner_content p {
+            padding-bottom: 0px;
+        }
+        .nav_link {
+            padding-top: 46px;
+        }
+        
+div#gallery .owl-nav {
+    display: none;
+}
+.price_head h2 {
+    width: 52%;
+}
+.all_price {
+    position: static;
+    transform: none;
+}
+section.new_painting {
+    top: 0;
+    margin: 50px 0px;
+}
+section.pricing_section {
+    min-height: auto;
+    padding-bottom: 50px;
+}
+.new_paint_head {
+    float: left;
+    width: 55%;
+}
+.new_paint_head h2 {
+    font-size: 21px;
+    line-height: 39px;
+}
+.new_paint_btn {
+    float: left;
+    width: 45%;
+}
+.new_paint_btn a {
+    font-size: 11px;
+    padding: 10px 31px;
+    margin: 0;
+}
+section.pepole_review_section h2 {
+    text-align: center;
+    padding-bottom: 27px;
+    width: 53%;
+    float: none;
+    margin: 0px auto;
+    line-height: 43px;
+}
+.foot_list ul li {
+    float: left;
+    width: 105px;
+    text-align: center;
+}
+.cost_list_overall {
+    float: left;
+    width: 22%;
+}
+.cost_content {
+    float: right;
+    width: 78%;
+}
+.cost_list_overall.list {
+    z-index: -1;
+    position: fixed;
+    top: 110px;
+    width: 23%;
+}
+.pest_content p {
+    min-height: 150px;
+}
+section.pricing_section.service {
+    margin-top: 0px;
+}
     }
     
