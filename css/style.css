@@ -584,7 +584,17 @@
         width: 100%;
         margin: 0px;
     }
-    
+    button#contact-form-button {
+        border: none;
+        text-decoration: none;
+        width: 282px;
+        border-radius: 38px;
+        box-shadow: 0 25px 28px 0 rgba(0, 0, 0, 0.16);
+        background-color: #6c63ff;
+        color: #fff;
+        padding: 8px 5px;
+        font-size: 17px;
+    }
     .pricing_content ul li a {
         float: left;
         font-family: 'Poppins-Regular';
@@ -805,16 +815,20 @@
     
     .profile_section span img {
         width: 100%;
-        min-height: 320px;
+        min-height: 311px;
         object-fit: cover;
+        height: 380px;
     }
-    
+    .profile_content_testi {
+        float: left;
+        width: 100%;
+        padding: 20px 30px;
+    }
     .profile_content {
         float: left;
         width: 100%;
-        padding: 31px;
+        padding: 10px 0px;
     }
-    
     .profile_content h5 {
         font-size: 22px;
         color: #333333;
@@ -899,7 +913,7 @@
     }
     .gallery_img {
         float: left;
-        width: 100%;
+        width: 95%;
     }
     .gallery_img img {
         height: 250px;
@@ -912,24 +926,27 @@
     }
     .profile_img {
         float: left;
-        width: 15%;
+        width: 25%;
     }
     
     .profile_detail {
         float: left;
-        width: 70%;
+        width: 60%;
+    }.profile_review {
+        float: left;
+        width: 15%;
+        text-align: center;
     }
     
     .profile_overalls {
         float: left;
         width: 90%;
-        height: 286px;
+        height: 317px;
         border-radius: 8px;
         box-shadow: 0 20px 40px 0 rgba(9, 14, 24, 0.1);
         background-color: #ffffff;
         margin: 50px 28px;
     }
-    
     .profile_img img {
         height: 50px;
         width: 50px !important;
@@ -951,6 +968,7 @@
         float: left;
         width: 100%;
         margin-bottom: 0px;
+        text-transform: capitalize;
     }
     
     .profile_detail p {
@@ -960,8 +978,12 @@
         float: left;
         width: 100%;
         font-family: 'Poppins-Regular';
+        text-transform: capitalize;
     }
-    
+    .profile_overalls.active p.paragraph {
+        color: #fff;
+        font-family: 'Poppins-Regular';
+    }
     .profile_overalls.active {
         background-color: #4043ff;
         margin-top: 0px;
@@ -1915,9 +1937,7 @@ div#gallery{
             width: 100%;
             padding: 20px 0px;
         }
-        section.pepole_review_section {
-            margin-top: 88px;
-        }
+ 
         section.pepole_review_section h2 {
             padding-bottom: 25px;
             width: 86%;
@@ -2300,6 +2320,14 @@ display: none;
         }
         section.work_gallery_section {
             padding-top: 0;
+        }
+        section.expert_section {
+            float: left;
+            width: 100%;
+            padding-top: 75px;
+        }
+        .expert_head h2 {
+            font-size: 24px;
         }
     }
     
