@@ -32,95 +32,97 @@
         </div>
     </nav>
     <section class="paint_detail_overall">
-        <div class="container">
-            <div class="paint_list">
-                <div class="detail_view">
-                    <h1 class="head_one "><span>GET</span>Painting Cost</h1>
-                    <ul class="detail_list">
-                        <li>
-                           
-                            <div class="detail_content">
-                                <label class="iconic">
-                                    <a class="int_list">Interior</a>
-                                    <input type="radio" checked="checked" name="radio">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="iconic">
-                                    <a class="int_list">Exterior</a>
-                                    <input type="radio" name="radio">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                        </li>
-                        <li>
-                          
-                            <div class="detail_content">
-                                <select>
-                                    <option>3 BHK</option>
-                                    <option>2 BHK</option>
-                                    <option>1 BHK</option>
-                                </select>
-                            </div>
-                        </li>
-                        <li>
-                           
-                            <div class="detail_content">
-                                <select>
-                                    <option>Paint Type</option>
-                                    <option>Repainting </option>
-                                    <option>Fresh painting </option>
-                                </select>
-                            </div>
-                        </li>
-                        <li>
-                        
-                            <div class="detail_content">
-                                <div class="profiles_icon">
-                                    <img src="assets/images/person.svg">
+        <form action="https://formspree.io/xpzyloqd" method="POST" id="contact-form" class="contact-form" >
+            <div class="container">
+                <div class="paint_list">
+                    <div class="detail_view">
+                        <h1 class="head_one "><span>GET</span>Painting Cost</h1>
+                        <ul class="detail_list">
+                            <li>
+                            
+                                <div class="detail_content">
+                                    <label class="iconic">
+                                        <a class="int_list">Interior</a>
+                                        <input type="radio" checked="checked" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="iconic">
+                                        <a class="int_list">Exterior</a>
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
                                 </div>
-                                <div class="profiles_detail">
-                                    <label>Name</label>
-                                    <input class="profile_view" type="text">
+                            </li>
+                            <li>
+                            
+                                <div class="detail_content">
+                                    <select name="rooms">
+                                        <option value="3 BHK">3 BHK</option>
+                                        <option value="2 BHK">2 BHK</option>
+                                        <option value="1 BHK">1 BHK</option>
+                                    </select>
                                 </div>
-                            </div>
-                        </li>
-                        <li>
-                        
-                            <div class="detail_content">
-                                <div class="profiles_icon">
-                                    <img src="assets/images/email.svg">
+                            </li>
+                            <li>
+                            
+                                <div class="detail_content">
+                                    <select name="paint">
+                                        <option value="repainting">Repainting </option>
+                                        <option value="fresh painting">Fresh painting </option>
+                                    </select>
                                 </div>
-                                <div class="profiles_detail">
-                                    <label>Email</label>
-                                    <input class="profile_view" type="text">
+                            </li>
+                            <li>
+                            
+                                <div class="detail_content">
+                                    <div class="profiles_icon">
+                                        <img src="assets/images/person.svg">
+                                    </div>
+                                    <div class="profiles_detail">
+                                        <label>Name</label>
+                                        <input class="profile_view" type="text" name="name">
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li>
-                        
-                            <div class="detail_content">
-                                <div class="profiles_icon">
-                                    <img src="assets/images/phone.svg">
+                            </li>
+                            <li>
+                            
+                                <div class="detail_content">
+                                    <div class="profiles_icon">
+                                        <img src="assets/images/email.svg">
+                                    </div>
+                                    <div class="profiles_detail">
+                                        <label>Email</label>
+                                        <input class="profile_view" type="text" name="email">
+                                    </div>
                                 </div>
-                                <div class="profiles_detail">
-                                    <label>Phone</label>
-                                    <input class="profile_view" type="text">
+                            </li>
+                            <li>
+                            
+                                <div class="detail_content">
+                                    <div class="profiles_icon">
+                                        <img src="assets/images/phone.svg">
+                                    </div>
+                                    <div class="profiles_detail">
+                                        <label>Phone</label>
+                                        <input class="profile_view" type="text" name="phone">
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="btn_tags price">
-                                <a href="price.html" target="blank" class="button_tag price">Get Estimate painting
-                                    quotes</a>
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="detail_img">
-                    <img src="assets/images/paint.svg">
+                            </li>
+                            <li>
+                                <span class="btn_tags price">
+                                    <button  class="button_tag price" id="contact-form-button">Get Estimate painting
+                                        quotes</button>
+                                    <p id="contact-form-status"></p>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="detail_img">
+                        <img src="assets/images/paint.svg">
+                    </div>
                 </div>
             </div>
-        </div>
+        </form>
     </section>
     <footer class="foot inner_page_foot">
         <div class="foot_overall">
