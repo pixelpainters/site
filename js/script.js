@@ -32,8 +32,12 @@ function tabfn(evt, cityName) {
 }
 /**------owl carosel------- */
 $(document).ready(function() {
+  // if($.isFunction('owlCarousel')){
     $(".owl-carousel").owlCarousel();
+  // }
+  });
 
+  // if($.isFunction('owlCarousel')){
     $('#profile_slide').owlCarousel({
         loop: true,
         margin: 10,
@@ -71,7 +75,7 @@ $(document).ready(function() {
             }
         }
     })
-});
+  // }
 /**-------menu ------------ */
 function menuToggle() {
     var element = document.getElementById("nav_bar");
