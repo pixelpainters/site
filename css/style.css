@@ -2036,8 +2036,12 @@ div#gallery{
         }
         .profile_head,
         .profile_content {
-            padding: 15px;
+            padding: 5px;
         }
+		.profile_content h5 {
+  
+    margin-top: 0;
+}
         .profile_overalls {
             height: 287px;
             box-shadow: 0 20px 40px 0 rgba(9, 14, 24, 0.1);
@@ -2329,6 +2333,24 @@ display: none;
         .expert_head h2 {
             font-size: 24px;
         }
+		
+.profile_section span {
+    float: none;
+    margin: 0px auto;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+.profile_section span img {
+    width: 56%;
+    height: 136px;
+    min-height: auto;
+    float: none;
+    margin: 0px auto;
+}
+.profile_content {
+    text-align: center;
+}
     }
     
     @media only screen and (min-width: 568px) and (max-width: 767px) {
@@ -2339,6 +2361,7 @@ display: none;
             width: 50%;
             float: left;
         }
+		
         section.pricing_section {
             min-height: auto;
         }
@@ -2355,8 +2378,47 @@ display: none;
             float: left;
             width: 50%;
         }
+		.profile_section span {
+    float: none;
+    margin: 0px auto;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+.profile_section span img {
+    width: 38%;
+    height: 186px;
+    min-height: auto;
+    float: none;
+    margin: 0px auto;
+}
+.profile_content {
+    text-align: center;
+}
     }
+	@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.profile_section span {
+    float: none;
+    margin: 0px auto;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+.profile_section span img {
+    width: 60%;
+    height: 286px;
+    min-height: auto;
+    float: none;
+    margin: 0px auto;
+}
+.profile_content {
+    text-align: center;
+}
+}
     @media only screen and (min-width: 768px) and (max-width: 1200px) {
+		.profile_section span img {
+    height: auto;
+}
         .nav_logo.price {
             padding-left: 0;
         }
@@ -2481,6 +2543,7 @@ section.pepole_review_section h2 {
 section.pricing_section.service {
     margin-top: 0px;
 }
+	
     }
     
 .float{
